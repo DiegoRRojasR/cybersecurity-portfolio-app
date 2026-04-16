@@ -6,6 +6,13 @@ This project includes a public portfolio, an admin dashboard, authentication, se
 
 ---
 
+## Links
+
+- **GitHub Repository:** https://github.com/DiegoRRojasR/cybersecurity-portfolio-app
+- **Docker Hub:** https://hub.docker.com/r/diegorojasrr/cybersecurity-portfolio-app
+
+---
+
 ## Features
 
 - Public cybersecurity portfolio
@@ -44,6 +51,33 @@ npm run dev
 ```
 
 ### 3. Open in browser
+
+- **Portfolio:** `http://localhost:3000`
+- **Admin panel:** `http://localhost:3000/admin`
+
+---
+
+## Run with Docker Hub Image
+
+### Pull image
+
+```bash
+docker pull diegorojasrr/cybersecurity-portfolio-app:latest
+```
+
+### Run container
+
+```bash
+docker run -d -p 3000:3000 --name cyber-portfolio-app diegorojasrr/cybersecurity-portfolio-app:latest
+```
+
+### Run container with persistent SQLite volume
+
+```bash
+docker run -d -p 3000:3000 -v "${PWD}/database.sqlite:/app/database.sqlite" --name cyber-portfolio-app diegorojasrr/cybersecurity-portfolio-app:latest
+```
+
+### Open in browser
 
 - **Portfolio:** `http://localhost:3000`
 - **Admin panel:** `http://localhost:3000/admin`
@@ -156,14 +190,17 @@ docker run -d -p 3000:3000 --name cyber-portfolio cyber-portfolio
 
 ---
 
-## Purpose
+## Academic Purpose
 
-This application was created as a custom web application for a cybersecurity-related academic evaluation, including:
+This application was created as an individual cybersecurity-related academic project to support:
 
 - Static Application Security Testing (SAST)
 - Dynamic Application Security Testing (DAST)
-- Container image scanning with Trivy
-- Dockerization and DockerHub publication
+- Docker containerization
+- Docker Hub publication
+- Container vulnerability scanning with Trivy
+
+It was designed to include authentication, session management, database persistence, frontend validation, and admin functionality for security evaluation.
 
 ---
 
