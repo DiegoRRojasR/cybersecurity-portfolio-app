@@ -1,3 +1,5 @@
+<img width="1915" height="1077" alt="Screenshot 2026-04-16 004312" src="https://github.com/user-attachments/assets/5299eadc-4efd-4f34-b41e-bfcb013ae79f" />
+
 # Cybersecurity Portfolio App
 
 A full-stack cybersecurity portfolio web application built with **React**, **Vite**, **Node.js**, **Express**, and **SQLite**.
