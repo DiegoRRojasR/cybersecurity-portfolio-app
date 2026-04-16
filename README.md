@@ -57,6 +57,22 @@ npm run dev
 
 ---
 
+## Docker
+
+### Build the image
+
+```bash
+docker build -t cyber-portfolio .
+```
+
+### Run the container
+
+```bash
+docker run -d -p 3000:3000 --name cyber-portfolio cyber-portfolio
+```
+
+---
+
 ## Run with Docker Hub Image
 
 ### Pull image
@@ -171,22 +187,6 @@ docker run -d -p 3000:3000 -v "${PWD}/database.sqlite:/app/database.sqlite" --na
 - Security headers with Helmet
 - Auto logout after inactivity
 - Activity logging
-
----
-
-## Docker
-
-### Build the image
-
-```bash
-docker build -t cyber-portfolio .
-```
-
-### Run the container
-
-```bash
-docker run -d -p 3000:3000 --name cyber-portfolio cyber-portfolio
-```
 
 ---
 
